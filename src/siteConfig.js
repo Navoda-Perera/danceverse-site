@@ -50,8 +50,8 @@ export const LANG_CONTENT = {
   },
   si: {
     label: "සිං",
-    tag: "ඔබේ වේදිකාව. ඔබේ දක්ෂතාව. ඔබේ මොහොත.",
-    body: "රෙකෝඩ් කරන්න, ඔබේ විලාසය පෙන්වන්න, ඔබේ වීඩියෝව ඉදිරිපත් කරන්න. ශ්‍රී ලංකාවේ විශාලතම නර්තන වීඩියෝ තරඟය දිවයින පුරා විවෘතයි — Solo, Duo, සහ Group. හොඳම වීඩියෝ සජීවී අවසන් මහාසංගමයට තේරී පත්වේ.",
+    tag: "අනාගත නර්තන රිද්මයේ සලකුණ ",
+    body: "ශ්‍රී ලාංකේය ඩිජිටල් අවකාශීය අනාගත නර්තනාභිෂේකය හිස පැලඳීමට ඔබ සූදානම්ද? ශ්‍රී ලංකාවේ නන් දෙසින් තරඟවදින දක්ෂතම නර්තන තරු සමඟ එකම ඩිජිටල් වේදිකාවක ගැටෙන්න, ඔබටම අනන්‍යවූ නර්තන රිද්මයේ සලකුණ තබමින් සුවිශේශී මුදල් ත්‍යාග හිමිකරගන්න!",
   },
   ta: {
     label: "தமி",
@@ -91,7 +91,7 @@ export const RULES_SECTIONS = [
       { en: "Open to all dance styles", si: "සියලු නර්තන ශෛලීන් සඳහා විවෘතයි" },
       { en: "Must use one of the 10 official songs", si: "10 ගීත වලින් එකක් භාවිත කළ යුතුයි" },
       { en: "Video duration: 30–60 seconds", si: "වීඩියෝ කාලය: තත්පර 30–60" },
-      { en: "Original performances only", si: "මුල් රංගනය පමණයි" },
+      { en: "They should not be edited.", si: "සංස්කරනය කරන ලද ඒවා නොවිය යුතුයි" },
       { en: "Maximum group size: 5", si: "උපරිම සාමාජිකයන් 5" },
       { en: "Fake engagement results in disqualification", si: "ව්‍යාජ engagement එකෙන් ඉවත් කරනු ලැබේ" },
       { en: "Organizers' decision is final", si: "සංවිධායකයන්ගේ තීරණය අවසාන" },
@@ -114,7 +114,7 @@ export const RULES_SECTIONS = [
   },
   {
     title: "Video Guidelines",
-    titleSi: "වීඩියෝ අවශ්‍යතා",
+    titleSi: "කොන්දේසි",
     requirements: [
       { icon: "📱", label: "Vertical 9:16", labelSi: "සිරස් 9:16" },
       { icon: "🎬", label: "Full HD 1080×1920", labelSi: "" },

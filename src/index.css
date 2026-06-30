@@ -40,6 +40,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 section[id] {
@@ -52,6 +53,7 @@ body {
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.55;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -318,6 +320,8 @@ button {
     top: var(--nav-h);
     left: 0;
     right: 0;
+    width: 100vw; 
+    max-width: 100%;
     bottom: 0;
     background: rgba(10, 10, 12, 0.98);
     backdrop-filter: blur(14px);
@@ -328,8 +332,9 @@ button {
     font-size: 16px;
     transform: translateX(100%);
     transition: transform 0.3s ease;
-    z-index: 55;
+    z-index: 999;
     overflow-y: auto;
+    box-sizing: border-box;
   }
 
   .mobile-menu.is-open {
