@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { LANG_CONTENT } from "../siteConfig.js";
 
 const LINKS = [
@@ -76,23 +77,19 @@ export default function Navbar({ lang, setLang }) {
         </button>
       </div>
 
-      <nav
-        className={`mobile-menu ${open ? "is-open" : ""}`}
-        aria-label="Mobile"
-      >
-        {LINKS.map((link) => (
-          <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
-            {link.label}
-          </a>
-        ))}
-        <a
-          href="#categories"
-          className="mobile-menu-cta"
-          onClick={() => setOpen(false)}
-        >
-          Enter Now ↗
-        </a>
-      </nav>
+      {open && createPortal(
+  <nav className="mobile-menu" aria-label="Mobile">
+    {LINKS.map((link) => (
+      <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
+        {link.label}
+      </a>
+    ))}
+    <a href="#categories" className="mobile-menu-cta" onClick={() => setOpen(false)}>
+      Enter Now ↗
+    </a>
+  </nav>,
+  document.body
+)}
     </header>
   );
 }
